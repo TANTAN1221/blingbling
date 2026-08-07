@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Form</title>
+
+<style>
+
+body{
+    font-family: "Times New Roman", serif;
+    background:#f4f4f4;
+    margin:20px;
+}
+
+.container{
+    width:70%;
+    margin:auto;
+    background:rgb(239,234,239);
+    border:2px solid #333;
+    border-radius:10px;
+    padding:20px;
+}
+
+#mainHeading{
+    color:darkblue;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+p{
+    font-size:18px;
+    line-height:1.5;
+    text-align:justify;
+}
+
+.highlight{
+    background:rgb(157,66,182);
+    color:white;
+    text-align:center;
+    font-weight:bold;
+    padding:12px;
+}
+
+a:link{
+    color:blue;
+}
+
+a:hover{
+    color:red;
+}
+
+a:visited{
+    color:purple;
+}
+
+label{
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:15px;
+    box-sizing:border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    width:auto;
+}
+
+.name-group{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.name-group div{
+    flex:1;
+}
+
+.name-group small{
+    display:block;
+    text-align:center;
+    margin-top:5px;
+    color:#555;
+}
+
+input[type="submit"]{
+    display:block;
+    margin:20px auto;
+    width:180px;
+    padding:10px;
+    background:green;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+input[type="submit"]:hover{
+    background:darkgreen;
+}
+
+.gradient-box{
+    margin-top:25px;
+    padding:20px;
+    background:linear-gradient(to right,#a6529f,#67ae6b);
+    color:white;
+    border-radius:10px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1 id="mainHeading">Feedback Form</h1>
+
+<p class="highlight">
+We Value Your Feedback!
+</p>
+
+<p class="highlight">
+Your feedback makes a difference! Please fill out the form below to share your thoughts and suggestions with us. Your input is crucial in helping us improve our services and provide a better experience for everyone.
+</p>
+
+<hr>
+
+<form>
+
+<label>Name:</label>
+
+<div class="name-group">
+
+<div>
+<input type="text" name="firstname" placeholder="First Name" required>
+<small>First Name</small>
+</div>
+
+<div>
+<input type="text" name="middlename" placeholder="Middle Name">
+<small>Middle Name</small>
+</div>
+
+<div>
+<input type="text" name="lastname" placeholder="Last Name" required>
+<small>Last Name</small>
+</div>
+
+</div>
+
+<label>Email:</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Comments:</label>
+<textarea rows="5" placeholder="Write your comments here..." required></textarea>
+
+<label>Skills:</label><br>
+
+<input type="checkbox" name="skill" value="HTML"> HTML
+<input type="checkbox" name="skill" value="CSS"> CSS
+<input type="checkbox" name="skill" value="JavaScript"> JavaScript
+
+<br><br>
+
+<label>Preferred Contact Method:</label><br>
+
+<input type="radio" name="contact" value="Phone" required> Phone
+<input type="radio" name="contact" value="Email"> Email
+
+<br><br>
+
+<label>Country:</label>
+
+<select required>
+<option value="">-- Select Country --</option>
+<option>Philippines</option>
+<option>Iceland</option>
+<option>Russia</option>
+<option>Australia</option>
+<option>United States</option>
+</select>
+
+<label>Upload Profile Picture:</label>
+
+<input type="file">
+
+<input type="submit" value="Submit Feedback">
+
+</form>
+
+<div class="gradient-box">
+
+<h3>Gradient Background Example</h3>
+
+<p>
+This section demonstrates a CSS linear gradient background.
+</p>
+
+<p>
+<strong>Group:</strong> Andal, Rocas, Velasco
+</p>
+
+<hr>
+
+<div style="text-align:center; margin-top:20px;">
+    <h3>Submitted to:</h3>
+    <p>
+        <a href="https://www.facebook.com/jeromeyanga13" target="_blank">
+            Mr. Jerome Yanga
+        </a>
+    </p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
